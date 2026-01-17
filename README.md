@@ -51,6 +51,30 @@ Trash2Cash/
 │   │   └── App.css
 ├── requirements.txt
 └── README.md
+## Pipline
+
+    Collector Input
+     │
+     ▼
+    React Form (Frontend)
+     │
+     ▼
+    POST /submit-data → Flask API
+     │
+     ▼
+    ML Prediction (Linear Regression + LabelEncoder)
+     │
+     ▼
+    Store in MongoDB Atlas
+     │
+     ▼
+    GET /get-data → React Frontend
+     │
+     ▼
+    Impact Metrics + Points + Leaderboard
+     │
+     ▼
+    Redeem Rewards / Eco Hero Badge
 
 
 ## Dependecies:
