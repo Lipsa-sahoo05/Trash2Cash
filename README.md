@@ -120,6 +120,6 @@ npm run dev
 
   Plastic Grade
 
- oints are capped using business rules (max points)
+ Points are capped using business rules (max points)
 
  Points converted to monetary value (points * 0.07)
