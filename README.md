@@ -33,24 +33,25 @@ This helps promote sustainable behavior and supports circular economy practices.
 ## **Project Structure**
 Trash2Cash/
 ├── backend/
-│ ├── app.py # Flask API + ML prediction logic
-│ ├── model_linear.pkl # Linear regression model
-│ ├── le.pkl # LabelEncoder for grade
-│ └── model_params.pkl # Model parameters (max points, etc.)
+│   ├── app.py               # Flask API + ML prediction logic
+│   ├── model_linear.pkl     # Linear regression model
+│   ├── le.pkl               # LabelEncoder for grade
+│   └── model_params.pkl     # Model parameters (max points, etc.)
 ├── frontend/
-│ ├── src/
-│ │ ├── components/
-│ │ │ ├── Body.jsx
-│ │ │ ├── Control.jsx
-│ │ │ ├── Header.jsx
-│ │ │ ├── Footer.jsx
-│ │ │ ├── Leaderboard.jsx
-│ │ │ └── Profile.jsx
-│ │ ├── App.jsx
-│ │ ├── index.jsx
-│ │ └── App.css
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── Body.jsx
+│   │   │   ├── Control.jsx
+│   │   │   ├── Header.jsx
+│   │   │   ├── Footer.jsx
+│   │   │   ├── Leaderboard.jsx
+│   │   │   └── Profile.jsx
+│   │   ├── App.jsx
+│   │   ├── index.jsx
+│   │   └── App.css
 ├── requirements.txt
 └── README.md
+
 
 ## Dependecies:
 
