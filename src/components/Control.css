@@ -1,0 +1,190 @@
+.control-page {
+  max-width: 950px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.collector-info {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.collector-info h1 {
+  color: #1f2937;
+}
+
+.collector-info p {
+  color: #374151;
+}
+
+/* Flex container for form + reference box */
+.control-flex {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap; /* responsive */
+}
+
+/* Form card */
+.control-card {
+  flex: 1 1 550px; /* grow and shrink, min width 550px */
+  background-color: #f3f4f6;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+}
+
+/* Reference box */
+.reference-box {
+  flex: 0 1 350px; /* fixed-ish width */
+  background-color: #e5e7eb;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.reference-box h2 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  color: #1f2937;
+  text-align: center;
+}
+
+/* Grid layout inside reference box */
+.reference-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2 columns */
+  gap: 0.8rem 1.5rem;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  padding: 0.6rem 0.8rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.grid-item .type {
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 0.2rem;
+}
+
+.grid-item .full {
+  color: #374151;
+  font-size: 0.9rem;
+}
+
+.grade-item {
+  justify-content: center;
+  text-align: center;
+}
+
+/* Form styles */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.2rem;
+}
+
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  color: #1f2937;
+}
+
+.form-group input {
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font-size: 1rem;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #1f2937;
+}
+
+.submit-btn {
+  width: 100%;
+  background-color: #1f2937;
+  color: white;
+  padding: 0.9rem;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.submit-btn:hover {
+  background-color: #111827;
+}
+.control-flex {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: nowrap; /* keep them side by side */
+  align-items: flex-start; /* align top */
+}
+
+/* Form card */
+.control-card {
+  flex: 0 0 600px; /* fixed width for form */
+  background-color: #f3f4f6;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+}
+
+/* Reference box */
+.reference-box {
+  flex: 0 0 300px; /* fixed width for reference */
+  background-color: #e5e7eb;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Make it responsive on smaller screens */
+@media (max-width: 950px) {
+  .control-flex {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .control-card,
+  .reference-box {
+    flex: 1 1 100%;
+  }
+}
+.reference-box h2 {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #1f2937;
+}
+
+/* Table Styling */
+.grades-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.grades-table th,
+.grades-table td {
+  border: 1px solid #9ca3af; /* light gray border */
+  padding: 0.6rem 0.8rem;
+  text-align: center;
+}
+
+.grades-table th {
+  background-color: #d1d5db; /* light header background */
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.grades-table td {
+  background-color: #f9fafb;
+  color: #111827;
+}

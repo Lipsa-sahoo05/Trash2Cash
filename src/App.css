@@ -1,0 +1,18 @@
+.App { min-height: 100vh; display: flex; flex-direction: column; }
+html, body, #root { height: 100%; margin: 0; padding: 0; }
+
+/* Make Body expand to fill space between header and footer */
+.App > :nth-child(2) { flex: 1; }
+/* Make whole app fill viewport */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* full height */
+}
+
+/* Make Routes container grow */
+.content-container {
+  flex: 1; /* takes all available vertical space */
+  display: flex;
+  flex-direction: column;
+}

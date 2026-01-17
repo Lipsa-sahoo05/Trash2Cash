@@ -1,0 +1,271 @@
+.body-container {
+  padding: 1.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+/* IMPACT CARDS */
+.impact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.2rem;
+  width: 100%;
+  max-width: 900px;
+  margin-bottom: 2rem;
+}
+
+.impact-card {
+  background: linear-gradient(135deg, #1f2937, #374151);
+  border-radius: 14px;
+  padding: 1.4rem;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+  animation: cardPop 0.6s ease;
+}
+
+.impact-card:hover {
+  transform: translateY(-6px) scale(1.03);
+}
+
+.impact-icon {
+  font-size: 2.4rem;
+}
+
+.impact-card h3 {
+  margin: 0.4rem 0;
+}
+
+/* DATA BOX */
+.todays-data-box {
+  width: 100%;
+  max-width: 800px;
+  background-color: #374151;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.data-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1.2fr; /* ID wider */
+  align-items: center;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid #4b5563;
+  column-gap: 10px;
+}
+
+
+.header-row {
+  background-color: #4b5563;
+  padding: 0.7rem;
+  border-radius: 6px;
+  font-weight: 600;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1.2fr;
+}
+
+
+/* TOOLTIP */
+.tooltip-container {
+  position: relative;
+}
+
+.tooltip-card {
+  position: absolute;
+  bottom: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #1f2937;
+  padding: 0.8rem;
+  border-radius: 10px;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.tooltip-container:hover .tooltip-card {
+  opacity: 1;
+}
+
+/* BADGE */
+.badge {
+  background: linear-gradient(135deg, gold, orange);
+  color: #10213a;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+  animation: badgePulse 1.8s infinite;
+}
+
+/* COIN */
+.coin-icon {
+  width: 90px;
+  height: 90px;
+  margin-bottom: 0.8rem;
+  animation: coinFloat 2.5s ease-in-out infinite,
+             coinGlow 3s ease-in-out infinite;
+}
+
+/* POINTS BUTTON */
+.points-btn {
+  width: 250px;
+  font-size: 2rem;
+  padding: 0.7rem;
+  background-color: #152e62;
+  border-radius: 40px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.points-btn:hover {
+  animation: btnBounce 0.4s ease;
+}
+
+/* PROGRESS */
+.progress-box {
+  width: 280px;
+  text-align: center;
+  margin-bottom: 1.2rem;
+}
+
+.progress-track {
+  height: 10px;
+  background: #374151;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #22c55e, #16a34a);
+  animation: progressGrow 1s ease;
+}
+
+/* REDEEM */
+.redeem-btn {
+  background-color: green;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  animation: redeemPulse 2.2s infinite;
+}
+
+/* POPUP */
+.popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-box {
+  background: #1f2937;
+  padding: 2rem;
+  border-radius: 12px;
+  min-width: 450px;
+}
+
+.close-btn {
+  background: #ef4444;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  border: none;
+  color: white;
+}
+
+/* ANIMATIONS */
+@keyframes coinFloat {
+  50% { transform: translateY(-8px); }
+}
+@keyframes coinGlow {
+  50% { filter: drop-shadow(0 0 14px gold); }
+}
+@keyframes btnBounce {
+  30% { transform: scale(1.05); }
+  60% { transform: scale(0.97); }
+}
+@keyframes redeemPulse {
+  50% { box-shadow: 0 0 14px rgba(34,197,94,0.4); }
+}
+@keyframes badgePulse {
+  50% { transform: scale(1.1); }
+}
+@keyframes cardPop {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; }
+}
+@keyframes rowFadeUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; }
+}
+@keyframes progressGrow {
+  from { width: 0; }
+}
+
+.progress-box {
+  width: 340px;
+  height: 340px;              /* makes it square */
+  background: #1f2937;
+  border-radius: 14px;
+  padding: 1.5rem;
+  margin: 1.5rem auto;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.2rem;
+
+  box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+  animation: cardPop 0.5s ease;
+}
+
+.progress-box h3 {
+  color: #e5e7eb;
+  font-size: 1.3rem;
+}
+
+/* INPUT */
+.url-input {
+  width: 100%;
+  padding: 0.7rem 0.8rem;
+  border-radius: 8px;
+  border: 1px solid #4b5563;
+  background: #111827;
+  color: white;
+  font-size: 0.95rem;
+}
+
+.url-input::placeholder {
+  color: #9ca3af;
+}
+
+/* BUTTON */
+.next-btn {
+  margin-top: 0.5rem;
+  padding: 0.6rem;
+  border-radius: 8px;
+  border: none;
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  color: #052e16;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.next-btn:hover {
+  transform: scale(1.05);
+}
+
+.next-btn{
+  text-align: right;
+}
+
+
+

@@ -1,0 +1,83 @@
+.leaderboard-container {
+  width: 100%;
+  max-width: 500px;
+  margin: 2rem auto;
+  background-color: #1f2937;
+  border-radius: 12px;
+  padding: 1.5rem;
+  color: white;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+.leaderboard-title {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+
+.leaderboard-box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.leaderboard-row {
+  display: grid;
+  grid-template-columns: 40px 40px 1fr 60px;
+  align-items: center;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  background-color: #292f3b;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.leaderboard-row:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+}
+
+.rank {
+  font-weight: bold;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.avatar {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.player-name {
+  font-weight: 500;
+}
+
+.player-points {
+  font-weight: 600;
+  text-align: right;
+}
+
+/* Top 3 medals */
+.medal {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+.medal-1 {
+  background: gold;
+}
+.medal-2 {
+  background: silver;
+}
+.medal-3 {
+  background: #cd7f32; /* bronze */
+}
+
+/* Highlight top 3 row slightly */
+.top-rank {
+  background-color: #374151;
+}
