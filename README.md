@@ -110,7 +110,7 @@ npm run dev
 
   Displays top collectors.
 
-## **Machine Learning Model
+## *Machine Learning Model*
 
  Uses Linear Regression to predict points based on:
 
@@ -120,6 +120,6 @@ npm run dev
 
   Plastic Grade
 
- oints are capped using business rules (max points)
+ Points are capped using business rules (max points)
 
  Points converted to monetary value (points * 0.07)
