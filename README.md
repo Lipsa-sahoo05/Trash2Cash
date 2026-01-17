@@ -72,43 +72,43 @@ python app.py
 
 Frontend
 
-1.Navigate to frontend:
+  1.Navigate to frontend:
 
-cd frontend
-
-
-2.Install dependencies:
-
-npm install
+    -cd frontend
 
 
-3.Start development server:
+  2.Install dependencies:
 
-npm run dev
+    -npm install
+
+
+ 3.Start development server:
+
+    -npm run dev
 
 ## Usage
 
 1.Login / Collector Login
 
-  Login as general user or collector.
+  -Login as general user or collector.
 
 2.Collector Dashboard
 
-  Submit collected plastic data (weight, volume, grade).
+  -Submit collected plastic data (weight, volume, grade).
 
-  Points are calculated based on ML model.
+  -Points are calculated based on ML model.
 
 3.Impact Metrics
 
-  Shows total plastic collected, carbon saved, trees saved.
+  -Shows total plastic collected, carbon saved, trees saved.
 
 4.Points & Redeem
 
-  View points earned, redeem points for cash rewards.
+  -View points earned, redeem points for cash rewards.
 
 5.Leaderboard
 
-  Displays top collectors.
+  -Displays top collectors.
 
 ## *Machine Learning Model*
 
