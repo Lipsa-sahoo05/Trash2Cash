@@ -1,6 +1,4 @@
-# Lightning Loop_15
-Urvion_Eco_Hack
-## ♻️ Trash2Cash
+Trash2Cash
 A smart waste management and reward platform built to promote recycling, resource efficiency, and responsible living.
 ## 🌍 Problem Statement:-
 Improper waste segregation and lack of incentives lead to excessive landfill usage, resource wastage, and environmental pollution. Most people are unaware of the value of recyclable waste and do not receive motivation to dispose of it responsibly.
